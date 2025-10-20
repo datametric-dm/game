@@ -141,7 +141,7 @@ export default function GameScreen() {
         for (const block of prev.blocks) {
           const newY = block.position.y + newSpeed * dt;
           
-          if (newY > GAME_HEIGHT + block.size.height) {
+          if (newY > 800) {
             // Блок вышел за пределы экрана
             continue;
           }
