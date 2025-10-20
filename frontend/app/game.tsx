@@ -108,7 +108,7 @@ export default function GameScreen() {
       hasExtraLife: true,
       player: {
         ...prev.player,
-        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 100 },
+        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
         invincible: false,
       },
     }));
