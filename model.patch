@@ -1,13 +1,40 @@
 diff --git a/frontend/app/game.tsx b/frontend/app/game.tsx
-index 1319215..5b15e39 100644
+index b2c1a9e..8d7a4a6 100644
 --- a/frontend/app/game.tsx
 +++ b/frontend/app/game.tsx
+@@ -38,7 +38,7 @@ export default function GameScreen() {
+     score: 0,
+     blocks: [],
+     player: {
+-      position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
++      position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: 500 },
+       size: { width: PLAYER_SIZE, height: PLAYER_SIZE },
+       invincible: false,
+     },
 @@ -108,7 +108,7 @@ export default function GameScreen() {
        hasExtraLife: true,
        player: {
          ...prev.player,
--        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 100 },
-+        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
+-        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
++        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: 500 },
          invincible: false,
        },
      }));
+diff --git a/model.patch b/model.patch
+index 090d0f8..e69de29 100644
+--- a/model.patch
++++ b/model.patch
+@@ -1,13 +0,0 @@
+-diff --git a/frontend/app/game.tsx b/frontend/app/game.tsx
+-index 1319215..5b15e39 100644
+---- a/frontend/app/game.tsx
+-+++ b/frontend/app/game.tsx
+-@@ -108,7 +108,7 @@ export default function GameScreen() {
+-       hasExtraLife: true,
+-       player: {
+-         ...prev.player,
+--        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 100 },
+-+        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
+-         invincible: false,
+-       },
+-     }));
