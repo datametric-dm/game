@@ -512,13 +512,19 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: '#ff3838',
     borderRadius: 4,
-    boxShadow: '0 0 20px rgba(255, 56, 56, 0.8)',
+    borderWidth: 2,
+    borderColor: '#ff6b6b',
   },
   player: {
     position: 'absolute',
     backgroundColor: '#00ff88',
     borderRadius: 8,
-    boxShadow: '0 0 25px rgba(0, 255, 136, 1)',
+    borderWidth: 3,
+    borderColor: '#00ffaa',
+  },
+  playerInvincible: {
+    borderColor: '#ffff00',
+    backgroundColor: '#ffff88',
   },
   startHint: {
     position: 'absolute',
