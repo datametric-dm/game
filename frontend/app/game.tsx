@@ -20,7 +20,6 @@ import type { Block, GameState } from '../types/game';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 const GAME_WIDTH = SCREEN_WIDTH;
-const GAME_HEIGHT = SCREEN_HEIGHT - 160; // Вычитаем место для UI
 const PLAYER_SIZE = 40;
 const MIN_BLOCK_SIZE = 36;
 const MAX_BLOCK_SIZE = 64;
@@ -32,6 +31,7 @@ const INVINCIBILITY_DURATION = 5000; // 5 секунд
 
 export default function GameScreen() {
   const router = useRouter();
+  const [gameAreaHeight, setGameAreaHeight] = useState(SCREEN_HEIGHT - 160);
   const [gameState, setGameState] = useState<GameState>({
     isPlaying: false,
     isPaused: false,
