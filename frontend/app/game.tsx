@@ -80,7 +80,7 @@ export default function GameScreen() {
           const newY = Math.max(
             60,
             Math.min(
-              GAME_HEIGHT - PLAYER_SIZE - 20,
+              700,
               prev.player.position.y + gestureState.dy
             )
           );
