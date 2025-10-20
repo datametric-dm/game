@@ -378,6 +378,7 @@ export default function GameScreen() {
                 style={[
                   styles.block,
                   {
+                    position: 'absolute',
                     left: block.position.x,
                     top: block.position.y,
                     width: block.size.width,
@@ -392,6 +393,7 @@ export default function GameScreen() {
               style={[
                 styles.player,
                 {
+                  position: 'absolute',
                   left: gameState.player.position.x,
                   top: gameState.player.position.y,
                   width: gameState.player.size.width,
