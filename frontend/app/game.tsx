@@ -38,7 +38,7 @@ export default function GameScreen() {
     score: 0,
     blocks: [],
     player: {
-      position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 100 },
+      position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
       size: { width: PLAYER_SIZE, height: PLAYER_SIZE },
       invincible: false,
     },
