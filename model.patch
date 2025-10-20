@@ -1,0 +1,13 @@
+diff --git a/frontend/app/game.tsx b/frontend/app/game.tsx
+index 1319215..5b15e39 100644
+--- a/frontend/app/game.tsx
++++ b/frontend/app/game.tsx
+@@ -108,7 +108,7 @@ export default function GameScreen() {
+       hasExtraLife: true,
+       player: {
+         ...prev.player,
+-        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 100 },
++        position: { x: GAME_WIDTH / 2 - PLAYER_SIZE / 2, y: GAME_HEIGHT - 120 },
+         invincible: false,
+       },
+     }));
