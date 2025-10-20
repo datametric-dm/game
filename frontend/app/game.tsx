@@ -398,6 +398,7 @@ export default function GameScreen() {
                   height: gameState.player.size.height,
                   opacity: playerOpacity,
                 },
+                gameState.player.invincible && styles.playerInvincible,
               ]}
             />
 
